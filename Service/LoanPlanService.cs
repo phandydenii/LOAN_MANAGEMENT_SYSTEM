@@ -42,7 +42,7 @@ namespace Namespace
                 var mapper = _mapper.Map<LoanPlan>(req);
                 _db.loanPlans!.Add(mapper);
                 _db.SaveChanges();
-                return GetById(req.id);
+                return GetById(mapper.id);
             }
             return null!;
         }
@@ -53,6 +53,7 @@ namespace Namespace
                 var mapper = _mapper.Map<LoanPlan>(req); 
                 _db.loanPlans!.Update(mapper);
                 _db.SaveChanges();
+                 return GetById(mapper.id);
             }
             return null!;
         }

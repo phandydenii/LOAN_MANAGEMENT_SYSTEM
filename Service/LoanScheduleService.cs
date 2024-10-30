@@ -39,7 +39,7 @@ namespace LOAN_MANAGEMENT_API.Service
                 var mapper = _mapper.Map<LoanSchedule>(req);
                 _db.loanSchedules!.Add(mapper);
                 _db.SaveChanges();
-                return GetById(req.loan_schedule_id);
+                 return GetById(mapper.loan_schedule_id);
             }
             return null!;
         }
@@ -49,6 +49,7 @@ namespace LOAN_MANAGEMENT_API.Service
                 var mapper = _mapper.Map<LoanSchedule>(req);
                 _db.loanSchedules!.Update(mapper);
                 _db.SaveChanges();
+                 return GetById(mapper.loan_schedule_id);
             }
             return null!;
         }

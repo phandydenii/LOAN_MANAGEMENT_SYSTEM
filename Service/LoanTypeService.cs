@@ -42,7 +42,7 @@ namespace LOAN_MANAGEMENT_API.Service
                 var data = _mapper.Map<LoanType>(req);
                 _db.loanTypes!.Add(data);
                 _db.SaveChanges();
-                return GetById(req.id);
+                 return GetById(data.id);
             }
             return null!;
         }
@@ -53,7 +53,7 @@ namespace LOAN_MANAGEMENT_API.Service
                 var data = _mapper.Map<LoanType>(req);
                 _db.loanTypes!.Update(data);
                 _db.SaveChanges();
-                return GetById(req.id);
+                 return GetById(data.id);
             }
             return null!;
         }

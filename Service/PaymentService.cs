@@ -41,7 +41,7 @@ namespace LOAN_MANAGEMENT_API.Service
                 var data = _mapper.Map<Payment>(req);
                 _db.payments!.Add(data);
                 _db.SaveChanges();
-                return GetById(req.id);
+                  return GetById(data.id);
             }
             return null!;
         }
@@ -52,6 +52,7 @@ namespace LOAN_MANAGEMENT_API.Service
                 var data = _mapper.Map<Payment>(req);
                 _db.Update(data);
                 _db.SaveChanges();
+                  return GetById(data.id);
             }
             return null!;
         }

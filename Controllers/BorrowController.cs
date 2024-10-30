@@ -13,7 +13,7 @@ namespace LOAN_MANAGEMENT_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    
+
 
     public class BorrowController : ControllerBase
     {
@@ -23,7 +23,7 @@ namespace LOAN_MANAGEMENT_API.Controllers
             _service = service;
         }
 
-[Authorize]
+        [Authorize]
         [AllowAnonymous]
         [HttpGet("borrows")]
         public ActionResult Get()

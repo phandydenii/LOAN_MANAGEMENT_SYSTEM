@@ -40,8 +40,8 @@ namespace LOAN_MANAGEMENT_API.Service
             {
                 var data = _mapper.Map<Loan>(req);
                 _db.loans!.Add(data);
-                _db.SaveChanges();
-                return GetById(req.id);
+                _db.SaveChanges(); 
+                 return GetById(data.id);
             }
             return null!;
         }
@@ -52,6 +52,7 @@ namespace LOAN_MANAGEMENT_API.Service
                 var data = _mapper.Map<Loan>(req);
                 _db.loans!.Update(data);
                 _db.SaveChanges();
+                 return GetById(data.id);
             }
             return null!;
         }
