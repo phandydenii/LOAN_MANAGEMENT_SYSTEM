@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LOAN_MANAGEMENT_API", "LOAN_MANAGEMENT_API.csproj", "{700B755B-B165-45A6-890A-A3AB0FF1A5FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{700B755B-B165-45A6-890A-A3AB0FF1A5FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700B755B-B165-45A6-890A-A3AB0FF1A5FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700B755B-B165-45A6-890A-A3AB0FF1A5FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700B755B-B165-45A6-890A-A3AB0FF1A5FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37692C81-90CC-4CF7-84F0-608DDF15E968}
+	EndGlobalSection
+EndGlobal
